@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form overwrites</title>
+</head>
+<body>
+    <form action="firstDemo.html" method="get">
+        Enter Username<input type="text" name="username" required> <br>
+        <input type="submit" value="Send data"> <br>
+        <input type="submit" value="Send Without Validation" formnovalidate> <br>
+        <input type="submit" value="Use posts method" formmethod="post" formaction="form.html"> <br>
+        <input type="submit" value="Open in new page" formaction="form.html" formtarget="form.html"> <br>
+        <input type="submit" value="All Attributes" formmethod="post" formaction="form.html" formnovalidate formtarget="_blank">
+    </form>
+</body>
+</html>
